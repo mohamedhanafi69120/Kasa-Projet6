@@ -1,0 +1,13 @@
+@import "../utils/Variables";
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  width: 86%;
+  background-color: $GreyLight;
+  border-radius: 25px;
+  margin: 0 auto 40px auto;
+  padding: 40px;
+}

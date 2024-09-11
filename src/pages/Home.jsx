@@ -1,5 +1,6 @@
 import React from "react";
 import Banner from "../composants/Banner";
+import Gallery from "../composants/Gallery";
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
         image="Falaises.jpg"
         subtitle="PhotodeFalaises"
       />
+      <Gallery />
     </div>
   );
 };
