@@ -5,7 +5,7 @@ const Banner = ({ image, subtitle, displaytext }) => {
   return (
     <div className="banner">
       <img src={image} alt={subtitle} />
-      {displaytext} && <h1>Chez vous, partout et ailleurs</h1>
+      {displaytext} <h1>Chez vous, partout et ailleurs</h1>
     </div>
   );
 };
