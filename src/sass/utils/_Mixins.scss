@@ -1,0 +1,6 @@
+/***ici se trouve les fonction permettant de reutiliser des morceaux de codes ****/
+
+/****ombre de banniere**/
+@mixin shadowtextbanner {
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}

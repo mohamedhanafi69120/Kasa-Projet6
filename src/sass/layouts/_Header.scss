@@ -1,0 +1,33 @@
+@import "../utils/_Variables";
+
+header {
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 100px;
+
+  img {
+    height: 68px;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: $Red;
+    font-size: 1.2em;
+    font-weight: 500;
+
+    a {
+      color: $Black;
+      font-size: 1.2em;
+      font-weight: 500;
+    }
+  }
+}
+/**style qui s'applique si le lien est actif**/
+.navActive {
+  border-bottom: 3px solid $Black;
+  padding-bottom: 2px;
+}

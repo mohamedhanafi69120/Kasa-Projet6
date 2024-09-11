@@ -1,3 +1,96 @@
+@charset "UTF-8";
+/**mes variables**/
+/*****couleurs****/
+/**remise a zéro de certains élements lié au code **/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
 
+body {
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+}
+
+/**mes variables**/
+/*****couleurs****/
+header {
+  height: 68px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px 100px;
+}
+header img {
+  height: 68px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #ff6060;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+header nav a {
+  color: #000;
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+/**style qui s'applique si le lien est actif**/
+.navActive {
+  border-bottom: 3px solid #000;
+  padding-bottom: 2px;
+}
+
+/**mes variables**/
+/*****couleurs****/
+/***ici se trouve les fonction permettant de reutiliser des morceaux de codes ****/
+/****ombre de banniere**/
+.banner {
+  width: 86%;
+  height: 250px;
+  margin: 0 auto 40px auto;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.banner::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+}
+.banner img {
+  width: 100%;
+  height: 250px;
+  border-radius: 25px;
+  object-fit: cover;
+}
+.banner h1 {
+  width: 100%;
+  height: 250px;
+  color: #fff;
+  font-size: 3em;
+  font-weight: 700;
+  text-align: center;
+  line-height: 132px;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  margin-top: -220px;
+  z-index: 2;
+}
 
 /*# sourceMappingURL=style.css.map */
