@@ -18,12 +18,11 @@ header {
     color: $Red;
     font-size: 1.2em;
     font-weight: 500;
-
-    a {
-      color: $Black;
-      font-size: 1.2em;
-      font-weight: 500;
-    }
+  }
+  nav a {
+    color: $Black;
+    font-size: 1.2em;
+    font-weight: 500;
   }
 }
 /**style qui s'applique si le lien est actif**/

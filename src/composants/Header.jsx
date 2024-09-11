@@ -6,21 +6,16 @@ const Header = () => {
     <header>
       <img src="logo.png" alt="Logo de lagence" />
       <nav>
-        <NavLink
-          to="/"
-          className={(nav) => (nav.isActive ? "navActive" : null)}
-        >
+        <NavLink to="/" className={(nav) => (nav.isActive ? "navActive" : "")}>
           Accueil
         </NavLink>
 
-        {
-          <NavLink
-            to=""
-            className={(nav) => (nav.isActive ? "navActive" : null)}
-          >
-            A propos
-          </NavLink>
-        }
+        <NavLink
+          to="/About"
+          className={(nav) => (nav.isActive ? "navActive" : "")}
+        >
+          A Propos
+        </NavLink>
       </nav>
     </header>
   );
