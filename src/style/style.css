@@ -86,10 +86,10 @@ header nav a {
   font-size: 3em;
   font-weight: 700;
   text-align: center;
-  line-height: 132px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   margin-top: -220px;
+  line-height: 200px;
   z-index: 2;
 }
 
@@ -158,6 +158,29 @@ header nav a {
   height: 70px;
   font-size: 1.1em;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(10, 10, 10, 0.5) 42%, rgba(4, 4, 4, 0.5) 99.99%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+/**mes variables**/
+/*****couleurs****/
+/* Centrer les éléments du dropdown */
+.content_list {
+  background-color: #ff6060;
+  color: white;
+  margin: 20px auto;
+  width: 80%; /* Ajustez cette valeur selon la largeur désirée */
+  max-width: 850px; /* Limiter la largeur maximum */
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Ajouter un style pour le texte ouvert */
+.listActive {
+  padding: 10px;
+  background-color: #f6f6f6;
+  color: #000;
+  border: none;
+  border-radius: 0 0 5px 5px;
 }
 
 /*# sourceMappingURL=style.css.map */

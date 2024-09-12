@@ -1,0 +1,23 @@
+@import "../utils/_Variables";
+
+/* Centrer les éléments du dropdown */
+
+.content_list {
+  background-color: $Red;
+  color: white;
+  margin: 20px auto;
+  width: 80%; /* Ajustez cette valeur selon la largeur désirée */
+  max-width: 850px; /* Limiter la largeur maximum */
+  border-radius: 5px;
+  padding: 10px;
+  text-align: left;
+}
+
+/* Ajouter un style pour le texte ouvert */
+.listActive {
+  padding: 10px;
+  background-color: $GreyLight;
+  color: #000;
+  border: none;
+  border-radius: 0 0 5px 5px;
+}

@@ -37,10 +37,10 @@
     font-size: 3em;
     font-weight: 700;
     text-align: center;
-    line-height: 132px;
     @include shadowtextbanner;
     border-radius: 25px;
     margin-top: -220px;
+    line-height: 200px;
     z-index: 2;
   }
 }
