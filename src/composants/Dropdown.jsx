@@ -33,7 +33,11 @@ const Dropdown = ({ title, text }) => {
   );
 };
 
+<<<<<<< HEAD
 /*******deffinitions des props  */
+=======
+/*******définitions des props  */
+>>>>>>> e845faab4183ecb0edc8db51635a2844a1bee24a
 Dropdown.propTypes = {
   title: PropTypes.string.isRequired,
   text: PropTypes.oneOfType([
