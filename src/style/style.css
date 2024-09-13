@@ -162,7 +162,6 @@ header nav a {
 
 /**mes variables**/
 /*****couleurs****/
-<<<<<<< HEAD
 .content_list {
   display: flex;
   flex-direction: column;
@@ -214,27 +213,37 @@ header nav a {
   border-radius: 0 0 5px 5px;
   margin-bottom: 20px;
   padding: 20px;
-=======
-/* Centrer les éléments du dropdown */
-.content_list {
-  background-color: #ff6060;
-  color: white;
-  margin: 20px auto;
-  width: 80%; /* Ajustez cette valeur selon la largeur désirée */
-  max-width: 850px; /* Limiter la largeur maximum */
-  border-radius: 5px;
-  padding: 10px;
-  text-align: left;
 }
 
-/* Ajouter un style pour le texte ouvert */
-.listActive {
-  padding: 10px;
-  background-color: #f6f6f6;
+/**mes variables**/
+/*****couleurs****/
+.errorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.errorPage h1 {
+  color: #ff6060;
+  font-size: 10em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.errorPage p {
+  color: #ff6060;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 150px;
+  font-weight: 700;
+}
+.errorPage a {
   color: #000;
-  border: none;
-  border-radius: 0 0 5px 5px;
->>>>>>> e845faab4183ecb0edc8db51635a2844a1bee24a
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+  text-decoration-line: underline;
+  margin-bottom: 150px;
 }
 
 /*# sourceMappingURL=style.css.map */
