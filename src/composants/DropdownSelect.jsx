@@ -17,11 +17,8 @@ const DropdownSelect = ({ prestations }) => {
 };
 
 /*********deffinitions des props */
-<<<<<<< HEAD
-DropdownSelect.propTypes = {
-=======
+
 DropdownSelect.PropTypes = {
->>>>>>> e845faab4183ecb0edc8db51635a2844a1bee24a
   prestations: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
