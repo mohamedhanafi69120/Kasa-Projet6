@@ -1,0 +1,55 @@
+@import "../utils/_Variables";
+
+.content_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 20px;
+  margin-bottom: 20px;
+
+  .content {
+    width: 1440px;
+    height: 34px;
+    background-color: $Red;
+    border-radius: 5px;
+    padding: 30px 20px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: $White;
+  }
+  .rafter {
+    font-size: 2.5em;
+    font-weight: 500;
+    color: $White;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+  .rafterActive {
+    transform: rotate(-92deg);
+  }
+  p {
+    width: 1440px;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: $Black;
+    margin-bottom: 0;
+    line-height: 1.5em;
+    opacity: 0;
+  }
+  .listActive {
+    opacity: 1;
+    background-color: $GreyLight;
+    border-radius: 0 0 5px 5px;
+    margin-bottom: 20px;
+    padding: 20px;
+  }
+}

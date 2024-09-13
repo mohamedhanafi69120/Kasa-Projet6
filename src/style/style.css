@@ -86,10 +86,10 @@ header nav a {
   font-size: 3em;
   font-weight: 700;
   text-align: center;
-  line-height: 132px;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 25px;
   margin-top: -220px;
+  line-height: 200px;
   z-index: 2;
 }
 
@@ -158,6 +158,61 @@ header nav a {
   height: 70px;
   font-size: 1.1em;
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3) 0%, rgba(10, 10, 10, 0.5) 42%, rgba(4, 4, 4, 0.5) 99.99%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+/**mes variables**/
+/*****couleurs****/
+.content_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px 20px;
+  margin-bottom: 20px;
+}
+.content_list .content {
+  width: 1440px;
+  height: 34px;
+  background-color: #ff6060;
+  border-radius: 5px;
+  padding: 30px 20px;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content_list h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #fff;
+}
+.content_list .rafter {
+  font-size: 2.5em;
+  font-weight: 500;
+  color: #fff;
+  padding-bottom: 10px;
+  cursor: pointer;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+.content_list .rafterActive {
+  transform: rotate(-92deg);
+}
+.content_list p {
+  width: 1440px;
+  font-size: 1.5em;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 0;
+  line-height: 1.5em;
+  opacity: 0;
+}
+.content_list .listActive {
+  opacity: 1;
+  background-color: #f6f6f6;
+  border-radius: 0 0 5px 5px;
+  margin-bottom: 20px;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
