@@ -1,11 +1,11 @@
 @import "../utils/_Variables";
 
 header {
-  height: 68px;
   display: flex;
+  height: 68px;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 100px;
+  margin: 50px 200px;
 
   img {
     height: 68px;
@@ -14,7 +14,7 @@ header {
   nav {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 50px;
     color: $Red;
     font-size: 1.2em;
     font-weight: 500;
