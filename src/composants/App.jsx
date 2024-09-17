@@ -5,6 +5,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import About from "../pages/About";
 import Error from "../pages/Error";
+import Locations from "../pages/Locations";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/About" element={<About />} />
+          <Route path="/Locations/:id" element={<Locations />} />
           <Route path="*" element={<Error />} />
           {/*une route generique pour les url invalides*/}
         </Routes>

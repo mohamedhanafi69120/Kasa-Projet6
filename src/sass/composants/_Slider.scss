@@ -1,0 +1,44 @@
+@import "../utils/_Mixins";
+@import "../utils/_Variables";
+
+.slidecontent {
+  width: 86%;
+  height: 570px;
+  border-radius: 25px;
+  margin: 0 auto 20px auto;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+  }
+
+  .rafter {
+    color: $White;
+    font-size: 6em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-45%);
+    cursor: pointer;
+  }
+
+  .rafterLeft {
+    left: 30px;
+  }
+
+  .rafterRight {
+    right: 30px;
+  }
+
+  .counter {
+    color: $White;
+    font-size: 2em;
+    font-weight: 700;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    @include shadowcounter;
+  }
+}
