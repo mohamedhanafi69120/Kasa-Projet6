@@ -20,13 +20,16 @@ body {
 /*****couleurs****/
 header {
   display: flex;
-  height: 68px;
+  height: 60px;
   justify-content: space-between;
   align-items: center;
   margin: 50px 200px;
 }
 header img {
   height: 80px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 header nav {
   display: flex;
@@ -41,9 +44,7 @@ header nav a {
   font-size: 1.5em;
   font-weight: 500;
 }
-
-/**style qui s'applique si le lien est actif**/
-.navActive {
+header .navActive {
   border-bottom: 3px solid #000;
   padding-bottom: 2px;
 }
@@ -175,7 +176,7 @@ header nav a {
 }
 .content_list .content {
   width: 1440px;
-  height: 34px;
+  height: 48px;
   background-color: #ff6060;
   border-radius: 5px;
   padding: 30px 20px;
@@ -185,7 +186,7 @@ header nav a {
   align-items: center;
 }
 .content_list h3 {
-  font-size: 1.5em;
+  font-size: 1.2em;
   font-weight: 700;
   color: #fff;
 }
@@ -203,7 +204,7 @@ header nav a {
 }
 .content_list p {
   width: 1440px;
-  font-size: 1.5em;
+  font-size: 1.1em;
   font-weight: 500;
   color: #000;
   margin-bottom: 0;
@@ -216,37 +217,6 @@ header nav a {
   border-radius: 0 0 5px 5px;
   margin-bottom: 20px;
   padding: 20px;
-}
-
-/**mes variables**/
-/*****couleurs****/
-.errorPage {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.errorPage h1 {
-  color: #ff6060;
-  font-size: 10em;
-  font-weight: 700;
-  text-align: center;
-  margin-bottom: 150px;
-}
-.errorPage p {
-  color: #ff6060;
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 150px;
-  font-weight: 700;
-}
-.errorPage a {
-  color: #000;
-  font-size: 1.5em;
-  font-weight: 500;
-  text-align: center;
-  text-decoration-line: underline;
-  margin-bottom: 150px;
 }
 
 /***ici se trouve les fonction permettant de reutiliser des morceaux de codes ****/
@@ -288,6 +258,147 @@ header nav a {
   bottom: 25px;
   left: 50%;
   text-shadow: 4px 8px 4px rgba(0, 0, 0, 0.8);
+}
+
+/**mes variables**/
+/*****couleurs****/
+.errorPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.errorPage h1 {
+  color: #ff6060;
+  font-size: 10em;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 150px;
+}
+.errorPage p {
+  color: #ff6060;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 150px;
+  font-weight: 700;
+}
+.errorPage a {
+  color: #000;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-align: center;
+  text-decoration-line: underline;
+  margin-bottom: 150px;
+}
+
+/**mes variables**/
+/*****couleurs****/
+.locationInfos {
+  width: 86%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.locationInfos .boxLeft {
+  width: 75%;
+}
+.locationInfos h2 {
+  color: #ff6060;
+  font-size: 2em;
+  font-weight: 500;
+}
+.locationInfos p {
+  color: #000;
+  font-size: 1em;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.locationInfos .labelTag {
+  margin-bottom: 20px;
+}
+.locationInfos span {
+  width: 130px;
+  height: 30px;
+  background-color: #ff6060;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 10px;
+  font-size: 1em;
+  font-weight: 700;
+  border-radius: 15px;
+}
+.locationInfos .boxRight {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.locationInfos .boxRight .hostProfile {
+  display: flex;
+  margin-left: 432px;
+  align-items: center;
+  gap: 20px;
+}
+.locationInfos img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+.locationInfos h3 {
+  color: #ff6060;
+  font-size: 1em;
+  text-align: right;
+  font-weight: 500;
+}
+.locationInfos .stars {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.locationInfos .stars i {
+  font-size: 1em;
+}
+.locationInfos .stars .redStars {
+  color: #ff6060;
+}
+.locationInfos .stars .greyStars {
+  color: #e3e3e3;
+}
+
+.locationDetailsDropdown {
+  display: flex;
+  align-items: flex-start;
+  width: 88%;
+  margin: 0 auto 45px auto;
+  gap: 25px;
+}
+.locationDetailsDropdown .content_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 50%;
+}
+.locationDetailsDropdown .content_list .content {
+  width: 100%;
+  margin: 0;
+  padding: 10px 20px 10px 10px;
+}
+.locationDetailsDropdown .content_list .listActive li {
+  line-height: 2em;
+  width: 1038px;
+}
+.locationDetailsDropdown .content_list p {
+  padding: 20px;
+  line-height: 2em;
+  width: 100%;
+}
+.locationDetailsDropdown .content_list .equipmentList {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,14 +1,17 @@
-@import "../utils/_Variables";
+@import "../utils/Variables";
 
 header {
   display: flex;
-  height: 68px;
+  height: 60px;
   justify-content: space-between;
   align-items: center;
   margin: 50px 200px;
 
   img {
     height: 80px;
+    width: auto; // Maintient la largeur proportionnelle à la hauteur
+    max-width: 100%; // Limite la largeur maximale à celle du conteneur parent
+    object-fit: contain; // Maintient le rapport d'aspect de l'image
   }
 
   nav {
@@ -19,14 +22,15 @@ header {
     font-size: 1.2em;
     font-weight: 500;
   }
+
   nav a {
     color: $Black;
     font-size: 1.5em;
     font-weight: 500;
   }
-}
-/**style qui s'applique si le lien est actif**/
-.navActive {
-  border-bottom: 3px solid $Black;
-  padding-bottom: 2px;
+
+  .navActive {
+    border-bottom: 3px solid $Black;
+    padding-bottom: 2px;
+  }
 }

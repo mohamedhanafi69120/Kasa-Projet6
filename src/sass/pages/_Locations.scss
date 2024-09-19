@@ -1,0 +1,120 @@
+@import "../utils/Variables";
+
+.locationInfos {
+  width: 86%;
+  margin: 0 auto 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .boxLeft {
+    width: 75%;
+  }
+
+  h2 {
+    color: $Red;
+    font-size: 2em;
+    font-weight: 500;
+  }
+
+  p {
+    color: $Black;
+    font-size: 1em;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+
+  .labelTag {
+    margin-bottom: 20px;
+  }
+  span {
+    width: 130px;
+    height: 30px;
+    background-color: $Red;
+    color: $White;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 1em;
+    font-weight: 700;
+    border-radius: 15px;
+  }
+  .boxRight {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    .hostProfile {
+      display: flex;
+      margin-left: 432px;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+  }
+  h3 {
+    color: $Red;
+    font-size: 1em;
+    text-align: right;
+    font-weight: 500;
+  }
+  .stars {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+
+    i {
+      font-size: 1em;
+    }
+    .redStars {
+      color: $Red;
+    }
+    .greyStars {
+      color: $GreyDark;
+    }
+  }
+}
+.locationDetailsDropdown {
+  display: flex;
+  align-items: flex-start;
+  width: 88%;
+  margin: 0 auto 45px auto;
+  gap: 25px;
+
+  .content_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 50%;
+
+    .content {
+      width: 100%;
+      margin: 0;
+      padding: 10px 20px 10px 10px;
+    }
+
+    .listActive li {
+      line-height: 2em;
+      width: 1038px;
+    }
+
+    p {
+      padding: 20px;
+      line-height: 2em;
+      width: 100%;
+    }
+
+    .equipmentList {
+      width: 100%;
+    }
+  }
+}
